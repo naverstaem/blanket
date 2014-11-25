@@ -126,39 +126,105 @@ header
   .header__girl
     position: relative
     text-align: center
-    z-index: 0
+    z-index: 1
     margin-top: -90px
     img
       display: inline-block
       max-width: 460px
+  .header__discount
+    text-align: center
+    color: #ffffff
+    width: 200px
+    height: 200px
+    +border-radius(50%)
+    border: solid 2px rgba(#fff,.2)
+    position: relative
+    z-index: 0
+    padding-top: 47px
+    font-family: 'pf_din_text_cond_proregular'
+    font-size: 72px
+    left: -115px
+    top: -570px
+    margin-bottom: -200px
+    span
+      font-family: 'pf_din_text_cond_prothin'
+
   .header__form
     position: relative
     z-index: 0
-    margin-left: -5px
-    margin-right: -5px
 
 .intro
-  padding-top: 30px
+  padding-top: 75px
   &__img
     text-align: center
+    +border-radius(50%)
+    position: relative
     img
       width: 100%
-      max-width: 246px
+      max-width: 240px
+
 
   &__text
-    padding-top: 50px
-    color: #333
-    font-family: 'NeoSansW1G-Regular'
+    padding-top: 30px
+    font-family: 'pf_din_text_cond_prolight'
     h2
-      font-size: 27px
+      font-size: 48px
       font-weight: normal
+      margin-bottom: 0
+      color: #bebebe
+      font-family: 'pf_din_text_cond_prothin'
+      text-transform: uppercase
+    h3
+      font-size: 120px
+      line-height: 1em
+      margin: 0
+      color: #f0be1e
     p
       font-size: 18px
-      margin-top: 20px
+      color: #1e1e1e
+      margin-top: 30px
+      &:first-child
+        margin-top: 0
+
+  .row
+    &:last-child
+      .intro__img
+        z-index: 1
+        top: 65px
+        left: -100px
+        img
+          max-width: 330px
+          width: auto
+      .intro__text
+        padding-top: 0
 
 
 
-
+.about
+  text-align: center
+  .about__img
+    display: inline-block
+    text-align: center
+    +border-radius(50%)
+    img
+      width: 100%
+      +border-radius(50%)
+  p
+    text-align: left
+    font-family: 'pf_din_text_cond_prolight'
+    font-size: 24px
+    color: #1e1e1e
+    margin-top: 30px
+  &__first
+    padding: 55px 0
+    background: url(../img/about-first_bg.png) repeat
+    background-size: cover
+    img
+      max-width: 240px
+  &__second
+    padding: 40px 0
+    img
+      max-width: 320px
 
 
 .reviews
