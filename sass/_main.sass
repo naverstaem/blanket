@@ -268,7 +268,62 @@ header
     color: #1e1e1e
 
 .features
-
+  &__img
+    display: inline-block
+    text-align: center
+    position: relative
+    img
+      max-width: 240px
+      width: 100%
+      +border-radius(50%)
+  &__text
+    h3
+      font-size: 48px
+      font-family: 'pf_din_text_cond_prothin'
+      color: #bebebe
+      margin-bottom: 0
+    h2
+      font-size: 96px
+      color: #f0be1e
+      font-family: 'pf_din_text_cond_prolight'
+      margin: 0
+      line-height: .6em
+    ul
+      padding-left: 60px
+      list-style: none
+      li
+        margin-top: 25px
+        font-size: 24px
+        color: #1e1e1e
+        font-family: 'pf_din_text_cond_prolight'
+        position: relative
+        &:before
+          position: absolute
+          content: ''
+          background: url(../img/list-icon2.png) no-repeat
+          width: 40px
+          height: 40px
+          left: -60px
+          top: 0
+  &__specs
+    font-family: 'pf_din_text_cond_proLtIt'
+    font-size: 18px
+    color: #1e1e1e
+    background: url(../img/features-specs_bg.png) no-repeat
+    width: 180px
+    height: 180px
+    +border-radius(50%)
+    position: absolute
+    top: 170px
+    right: 30px
+    padding-top: 40px
+  .row
+    position: relative
+    &:last-child
+      top: -70px
+      .features__img
+        img
+          max-width: 370px
 
 .reviews
 
