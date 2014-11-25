@@ -1840,4 +1840,12 @@ footer p { font-size: 14px; margin-bottom: 5px; }
 footer a { color: #0ab40a; text-decoration: underline; }
 footer a:hover, footer a:active, footer a:focus { color: #0ab40a; text-decoration: none; }
 
-@media (max-width: 768px) { h1, h2 { font-size: 24px !important; } }
+@media (max-width: 992px) { .features .row:last-child { top: 0; }
+  .features__text { margin-top: 90px; }
+  header .header__discount, .header--bottom .header__discount { left: 0; z-index: 1; }
+  .header--bottom .header__discount--bottom { left: 390px; } }
+@media (max-width: 768px) { h1, h2 { font-size: 24px !important; }
+  .header--bottom .header__discount--bottom { left: 0; }
+  .other__item:after { right: -2px; } }
+@media (max-width: 480px) { .info .info__in { padding-left: 40px; background: none; }
+  .features__text { margin-top: 140px; } }

@@ -544,31 +544,37 @@ footer
 
 
 //media queries
-//@media (max-width: $screen-md-min)
-//  header
-//    .header__form
-//      margin: 0
-//  .specs
-//    .specs__img
-//      img
-//        margin-top: 40px
-//  .form
-//    padding-left: 80px
-//    padding-right: 80px
-//  .other
-//    .item
-//      padding-left: 80px
-//      padding-right: 80px
+@media (max-width: $screen-md-min)
+  .features
+    .row
+      &:last-child
+        top: 0
+    &__text
+      margin-top: 90px
+  header
+    .header__discount
+      left: 0
+      z-index: 1
+  .header--bottom
+    .header__discount--bottom
+      left: 390px
 @media (max-width: $screen-sm-min)
   h1, h2
     font-size: 24px !important
-  //.reviews
-  //  &__img
-  //    float: none
-  //  &__text
-  //    float: none
+  .header--bottom
+    .header__discount--bottom
+      left: 0
+  .other
+    &__item
+      &:after
+        right: -2px
 
-//@media (max-width: $screen-xs-min)
-//  .form
-//    padding-left: 30px !important
-//    padding-right: 30px !important
+@media (max-width: $screen-xs-min)
+  .info
+    .info__in
+      padding-left: 40px
+      background: none
+  .features
+    &__text
+      margin-top: 140px
+

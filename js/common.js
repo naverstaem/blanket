@@ -97,9 +97,7 @@ head.ready(function() {
 	$('#form2').validate();
 	$('#form3').validate();
 	$('#form4').validate();
-	$('#form5').validate();
-	$('#form6').validate();
-	$('#form7').validate();
+
 
 
 	$('.navbar-nav a').on('click',function (e) {
