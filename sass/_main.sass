@@ -205,6 +205,7 @@ header
   .about__img
     display: inline-block
     text-align: center
+    position: relative
     +border-radius(50%)
     img
       width: 100%
@@ -221,10 +222,52 @@ header
     background-size: cover
     img
       max-width: 240px
-  &__second
+  &__second, &__third
     padding: 40px 0
     img
       max-width: 320px
+  &__third
+    background: url(../img/about-third_bg.png) repeat
+    background-size: cover
+    padding-bottom: 70px
+  &__price
+    width: 180px
+    height: 180px
+    +border-radius(50%)
+    +background-image(linear-gradient(to left, #1dc777 0%, #09b309 100%))
+    position: absolute
+    top: 170px
+    right: -20px
+    font-family: 'pf_din_text_cond_prolight'
+    text-align: center
+    padding-top: 60px
+    .price--old
+      display: block
+      color: #145a32
+      font-size: 18px
+
+    .price--new
+      line-height: 1em
+      color: #ffffff
+      font-size: 36px
+      display: block
+  .button--about
+    font-family: 'pf_highway_sans_probold'
+    font-size: 30px
+    padding: 13px 60px
+
+.info
+  padding: 40px 0
+  .info__in
+    background: url(../img/list-icon.png) left center no-repeat
+    background-position-x: 35px
+    padding: 40px 40px 40px 200px
+    border: solid 2px #c7efbd
+    font-family: 'pf_din_text_cond_prolight'
+    font-size: 18px
+    color: #1e1e1e
+
+.features
 
 
 .reviews
