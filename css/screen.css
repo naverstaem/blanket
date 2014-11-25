@@ -1803,4 +1803,9 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .reviews__text:before { position: absolute; content: ""; top: 58px; left: -20px; width: 0; height: 0; border-right: 20px solid #f9efd1; border-top: 15px solid transparent; border-bottom: 15px solid transparent; }
 .reviews__text p { font-family: "pf_din_text_cond_prolight"; font-size: 18px; color: #23a5d2; margin-top: 15px; margin-bottom: 0; }
 
+.header--bottom { padding-top: 40px; }
+.header--bottom .header__girl--bottom { margin-top: 0; }
+.header--bottom .header__girl--bottom img { max-width: 1040px; }
+.header--bottom .header__discount--bottom { left: 390px; top: -715px; }
+
 @media (max-width: 768px) { h1, h2 { font-size: 24px !important; } }
