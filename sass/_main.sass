@@ -355,6 +355,41 @@ header
 
 
 .reviews
+  padding: 60px 0
+  &__item
+    margin-top: 24px
+  &__img
+
+    img
+      width: 100%
+      max-width: 140px
+      +border-radius(50%)
+  &__text
+    width: 100%
+    +border-radius(16px)
+    +background-clip(padding-box)
+    background: #f9efd1
+    padding: 30px
+    font-family: 'pf_din_text_cond_prolight'
+    font-size: 24px
+    color: #1e1e1e
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      top: 58px
+      left: -20px
+      width: 0
+      height: 0
+      border-right: 20px solid #f9efd1
+      border-top: 15px solid transparent
+      border-bottom: 15px solid transparent
+    p
+      font-family: 'pf_din_text_cond_prolight'
+      font-size: 18px
+      color: #23a5d2
+      margin-top: 15px
+      margin-bottom: 0
 
 .header--bottom
   @extend header
