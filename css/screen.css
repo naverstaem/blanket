@@ -1718,7 +1718,9 @@ input::placeholder, textarea::placeholder { font-size: 18px; text-transform: non
 
 .navbar-inner { background: url(../img/top_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding-top: 55px; padding-bottom: 95px; }
 
-.navbar-brand { text-transform: uppercase; color: #c8a082 !important; font-family: "pf_din_text_cond_probold"; font-size: 42px; margin-top: 10px; }
+.navbar-collapse.in { overflow-y: inherit; }
+
+.navbar-brand { text-transform: uppercase; color: #c8a082 !important; font-family: "pf_din_text_cond_prothin"; font-size: 42px; margin-top: 10px; }
 .navbar-brand span { color: #282828; }
 
 .navbar-default { border: none; background: none; padding: 0; text-align: center; }
@@ -1832,5 +1834,10 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .other__price h3 { font-family: "pf_din_text_cond_proregular"; font-size: 36px; font-weight: normal; color: #000; vertical-align: middle; margin: 0; line-height: 1em; }
 .other__price h3 span { font-family: "als_rublregular"; font-size: 24px; }
 .other__price h4 { display: inline-block; font-family: "pf_din_text_cond_prolight"; font-size: 24px; color: #787878; font-weight: normal; margin: 0; }
+
+footer { background: url(../img/footer_bg.png) repeat; padding: 15px; font-family: "pf_din_text_cond_prolight"; text-align: center; }
+footer p { font-size: 14px; margin-bottom: 5px; }
+footer a { color: #0ab40a; text-decoration: underline; }
+footer a:hover, footer a:active, footer a:focus { color: #0ab40a; text-decoration: none; }
 
 @media (max-width: 768px) { h1, h2 { font-size: 24px !important; } }

@@ -9,11 +9,15 @@
   +cover
   padding-top: 55px
   padding-bottom: 95px
-
+/////////////////////
+.navbar-collapse
+  &.in
+    overflow-y: inherit
+/////////////////////
 .navbar-brand
   text-transform: uppercase
   color: #c8a082 !important
-  font-family: 'pf_din_text_cond_probold'
+  font-family: 'pf_din_text_cond_prothin'
   font-size: 42px
   margin-top: 10px
   span
@@ -523,6 +527,19 @@ header
       margin: 0
 
 footer
+  background: url(../img/footer_bg.png) repeat
+  padding: 15px
+  font-family: 'pf_din_text_cond_prolight'
+  text-align: center
+  p
+    font-size: 14px
+    margin-bottom: 5px
+  a
+    color: #0ab40a
+    text-decoration: underline
+    &:hover, &:active, &:focus
+      color: #0ab40a
+      text-decoration: none
 
 
 
