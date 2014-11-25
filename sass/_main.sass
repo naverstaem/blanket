@@ -408,8 +408,119 @@ header
 
 
 .other
+  padding: 60px 0
+  &__item
+    border: solid 2px #dbdbdb
+    padding: 25px 15px
+    margin-top: 50px
+    position: relative
+    &:after
+      position: absolute
+      content: "-20%"
+      background: black
+      width: 50px
+      height: 50px
+      +border-radius(2px)
+      color: #ffffff
+      font-size: 18px
+      text-align: center
+      top: -25px
+      right: -25px
+      font-family: 'pf_din_text_cond_prolight'
+      padding-top: 14px
+  &__img
+    display: inline-block
+    width: 100px
+    max-width: 140px
+    height: auto
+    vertical-align: top
+    margin-right: 25px
+    img
+      display: block
+  &__text
+    display: inline-block
+    width: 100%
+  &__caption
+    font-size: 30px
+    font-family: 'pf_din_text_cond_prothin'
+    margin-bottom: 10px
+    color: #d21414
+    text-transform: none
+    line-height: 1em
+
+  &__intro
+    font-family: 'pf_din_text_cond_prolight'
+    font-size: 14px
+    color: #1e1e1e
+  &__more
+    color: #1ebefa
+    font-size: 16px
+    text-decoration: underline
+    &:hover, &:active, &:focus
+      color: #1ebefa
+      text-decoration: none
+
+  &__form
+    display: inline-block
+    width: 100%
+    vertical-align: middle
+    margin-top: 10px
+    form
+      margin: 0
+      input
+        +placeholder
+          font-size: 16px
+        width: 100%
+        font-size: 16px
+        height: 50px
+        border: 2px solid #e5e5e5
+        +border-radius(2px)
+        +background-clip(padding-box)
+        background-color: #efefef
+        padding-left: 20px
+        margin-bottom: 10px
 
 
+      .button--other
+        font-size: 24px
+        font-family: 'pf_highway_sans_prothin'
+        color: #ffffff
+        margin-top: 0
+        +background(linear-gradient(to left, #1dc777 0%, #09b309 100%))
+        +box-shadow(0 0 0 0)
+        width: 100%
+        height: 50px
+        &:hover
+          background: lighten(#1dc777, 10%)
+
+
+
+  &__price
+    +box
+    line-height: 1.4em
+    text-align: left
+    display: inline-block
+    vertical-align: middle
+    margin-top: 8px
+    margin-bottom: 10px
+    h3
+      font-family: 'pf_din_text_cond_proregular'
+      font-size: 36px
+      font-weight: normal
+      color: #000
+      vertical-align: middle
+      margin: 0
+      line-height: 1em
+      span
+        font-family: 'als_rublregular'
+        font-size: 24px
+    h4
+      display: inline-block
+      font-family: 'pf_din_text_cond_prolight'
+      font-size: 24px
+      color: #787878
+      font-weight: normal
+      margin: 0
 
 footer
 
